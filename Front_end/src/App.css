@@ -1,0 +1,611 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.Navbar{
+  width: 100%;
+  height:60px;
+  background-color: #4169e1;
+  position: fixed;
+  padding: 0 12px;
+  display: flex;
+  /* border: 5px solid pink; */
+}
+
+.logo{
+  width: 60%;
+  font-weight: 600;
+  /* border: 4px solid red; */
+  color: white;
+  font-size: 25px;
+  margin-left: 8%;
+  margin-top: 0px;
+  display: flex;
+  /* border: 2px solid rebeccapurple; */
+}
+.logo small{
+  color: white;
+  font-size: 12px;
+  margin-left: 10px;
+  margin-top: -10px;
+}
+.right{
+  width: 40%;
+  text-align: right;
+  font-size: 20px;
+  color: white;
+  margin-top: -5px;
+  /* border: 3px solid green; */
+  margin-right: 6%;
+}
+ul{
+  list-style-type: none;
+}
+.Navbar ul li{
+  text-decoration: none;
+}
+.cart_side span{
+   padding: 20px 22px;
+  
+}
+.logo_side{
+  display: inline-grid;
+}
+.cart_side button{
+  background: white;
+  color: blue;
+  font-weight: 600;
+  height: 30px;
+  width: 25%;
+  font-size: 14px;
+  border: none;
+}
+.cart_side button:hover{
+  cursor: pointer;
+ 
+}
+/* input search{} */
+input {
+  height: 35px;
+  width: 35vw;
+  margin-left: 2%;
+  border: none;
+  border-radius: 2px;
+  /* list-style-type: none; */
+  /* border: 0px solid white; */
+  margin-top: 12px;
+} 
+input[type="text"]{
+ 
+  padding-left: 5%;
+  font-size: 16px;
+  
+}
+
+
+.search_icon{
+  margin-top: 1.6%;
+  height: 35px;
+  color: blue;
+  border-radius: 2px;
+  background: white;
+  padding: 0px 8px;
+  border-radius: 1px;
+}
+
+.search_bar input{
+  border: none;
+  outline: none;
+}
+.fa-solid{
+  cursor: pointer;
+}
+
+
+ /* this is for tooltip  */
+ /* Tooltip container */
+.tool {
+  position: relative;
+  display: inline-block;
+  /* border-bottom: 1px dotted black; If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tool .tooltext {
+  visibility: hidden;
+  width: 16vw;
+  background-color: #fff;
+  color: #000;
+  /* border: 2px solid blue; */
+  /* text-align: center; */
+  padding: 5px 0;
+  /* border-radius: 6px; */
+  -webkit-box-shadow: 1px 2px 2px 4px rgba(0,0,0,0.54); 
+  box-shadow: 1px 1px 19px 1px rgba(0,0,0,0.3);
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  top: 160%;
+  left: 1%;
+  right: 20%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tool .tooltext::after {
+  content: "";
+  position: absolute;
+  top:  0;
+  height: 40px;
+  width: 10%;
+  left: 50%;
+  margin-left: -5px; 
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+  position: absolute;
+  z-index: 1;
+}
+
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tool:hover .tooltext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.container
+{
+  border: 4px solid red;
+  height: 400px;
+  width: 30vw;
+  
+ display: flex; 
+}
+
+.HoverDataList{
+  text-align: left;
+  /* border: 3px solid red; */
+  justify-content: space-around;
+  /* background-color: gainsboro; */
+  
+  
+}
+.HoverDataList li{
+  line-height: 25px; 
+  margin-top: 1%;
+  border-bottom: #fff;
+  border-bottom: 2px solid rgb(233, 233, 233);
+  
+}
+ 
+ 
+.HoverDataList li:hover{
+  background: rgb(245, 243, 243);
+}
+.hicon{
+  color: #4169e1;
+ 
+}
+img .hicon{
+  color: #4169e1;
+}
+.data_tool{
+  display: flex;
+}
+.data_tool p{
+  margin-left: 8%;
+  font-size: 15px;
+}
+
+ /* this is for item image  and name  */
+ .innertag{
+   display: flex;
+   width: 90vw;
+   /* border: 4px solid rebeccapurple; */
+   justify-content: space-around  ;
+ }
+ .innertag .item:hover{
+   color: blue;
+   cursor: pointer;
+ }
+ .innertag .item img{
+   height: 70px;
+   /* width: 70px; */
+ }
+
+ .Inner_div{
+   margin-top: 3%;
+   width: 80vw;
+   display: flex;
+   justify-content: space-around;
+ }
+ .Inner_div_else{
+  margin-top: 3%;
+  width: 90vw;
+  display: flex;
+  justify-content: space-around;
+}
+ .Inner_div_second{
+   
+  width: 20vw;
+  height: 360px;
+  border: 2px solid gainsboro;
+ }
+ .Inner_div_second img{
+   height: 350px;
+   width: 260px;
+   padding: 3px 5px;
+ }
+ .Outer_div{
+   
+   border-top: none;
+   display: flex;
+   /* border: 3px solid orange; */
+   border: 2px solid rgb(233, 233, 233);
+ 
+ }
+ .box{
+   display: flex;
+   justify-content: space-between;
+    /* width: 70vw; */
+    height: 60px;
+   border: 3px solid rgb(233, 233, 233);
+ }
+
+ .Single_item img{
+   height: 150px;
+   width: 100px;
+ }
+ .Single_item img:hover{
+  /* height: 152px;
+  width: 102px; */
+  transform: scale(1.1);
+  cursor: pointer;
+}
+ 
+.offer{
+  align-items: center;
+   color: green;
+}
+.pad_text{
+  padding: 4px 5px;
+}
+ .view_all{
+  background: #4169e1;
+  color: white;
+  font-weight: 600;
+  height: 40px;
+  width: 8%;
+  font-size: 14px;
+  border: none;
+  /* padding: 1% 1%; */
+  margin: 7px 2%;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+h4{
+  margin-top: 1%;
+}
+.main_container{
+  /* border: 5px solid red; */
+  width: 100vw;
+  padding: 4px 4px;
+  /* justify-content: space-around; */
+
+}
+.outer_main_conatiner{
+  display: flex;
+}
+.innertag{
+  /* height: 100px; */
+}
+.outNav{
+  /* border: 5px solid red; */
+}
+.Banner_Background{
+  border: 4px solid rgb(233, 233, 233);
+
+  z-index:-1;
+  position: relative;
+  /* background-color: rgb(233, 233, 233); */
+}
+.Banner_space{
+  padding-top: 1%;
+}
+
+.innertag_first{
+  width: 5vw;
+  /* border: 3px solid blue; */
+}
+.innertag_last{
+  width: 5vw;
+  /* border: 5px solid red; */
+}
+.Navimages{
+  display: flex;
+  margin-top: 3%;
+  /* justify-content: space-around; */
+  /* border: 5px solid red; */
+  position: relative;
+  z-index: -1;
+}
+center{
+  font-weight: 500;
+}
+/* This css for Form  */
+.Login_container{
+  /* border: 2px solid #e0e0e0; */
+  border-radius: 5px;
+  height: 528px;
+  width: 675px;
+  /* border: 4px solid green; */
+ display: flex; 
+ border-radius: 4px;
+ background: #fff;
+}
+.Form_logo_side{
+  height: 528px;
+  width: 270px;
+  color: #fff;
+  /* border: 4px solid green; */
+  background-color: #4169e1;
+  border-radius: 5px;
+
+}
+.Form_side{
+  width: 405px;
+  height: 528px;
+  /* border: 5px solid blue; */
+  justify-content: space-evenly;
+}
+.login_text{
+  width: 20vw;
+}
+.login_item{
+  height: 60px;
+  width: auto;
+  /* border: 4px solid greenyellow; */
+  margin: 8% 5%;
+}
+.Or_section{
+  height: 60px;
+  width: auto;
+  margin-left: 45%;
+  /* margin-top: 1%; */
+}
+.login_center{
+  text-align: center;
+}
+.size{
+  width: 20vw;
+  height: 50px;
+  border: none;
+  margin: 0.1% 5%;
+  border-radius: 3px;
+  background-color: #fb641b;
+}
+.different_background{
+  background-color: #fff;
+  border: none;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%) ;
+  /* border: 1px solid #e0e0e0; */
+    border-radius: 2px;
+    color: #2874f0;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+ 
+}
+.paragrph{
+  margin-top: 25%;
+  margin-left: 8%;
+  font-size: 18px;
+  line-height: 150%;
+  color: #dbdbdb;
+  /* margin-left: -10%; */
+}
+.Or_style{
+  color: #878787;
+}
+.login{
+  margin-top: 15%;
+  margin-left: 8%;
+  font-size: 28px;
+  font-weight: 500;
+}
+.login_logo img{
+  height: 200px;
+  width: 200px;
+  margin: 18% 10%;
+}
+.login_item_border{
+  width: 20vw;
+  margin: 8% 5%;
+ 
+  
+}
+
+input[type="email"],[type="password"]{
+  box-shadow: none !important;
+  border: none;
+ 
+  border-bottom: 2px solid rgb(245, 243, 243);
+  width: 19vw;
+}
+label{
+  color: #878787;
+}
+.form-floating{
+  /* border-bottom: 2px solid #4169e1; */
+}
+.Last_color{
+  color: #2874f0;
+}
+.login_above_text{
+  color: #878787;
+    font-size: 12px;
+    font-weight: 400;
+}
+.mid_color{
+  color: #2874f0;
+  font-weight: 400;
+}
+.Close_btn{
+  display: inline-block;
+  border-radius: 2px;
+    color: #212121;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: 500;
+    transition: box-shadow .2s ease;
+    vertical-align: super;
+    background: #fff;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
+    border: 1px solid #e0e0e0;
+}
+.Login_main_container{
+  outline: none;
+  position: relative;
+  /* border: 2px solid red; */
+  border-radius: 10px;
+}
+.Close_btn .close{
+  position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    vertical-align: top;
+}
+/* This is for the FOOTER css */
+.footer_boder{
+  /* border: 5px solid red; */
+  height: 70px;
+  width: auto;
+  color: white;
+  background-color: #172337;
+  border-top: 0.5px solid white;
+  
+}
+.footer{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1.5%;
+  border:#555;
+  height: 40px;
+  width: 90vw;
+}
+.footer_icon{
+  color: #ffe11b;
+}
+.before_footer{
+  /* display: flex; */
+  /* justify-content: space-around; */
+  /* border: 5px solid springgreen; */
+  height: 300px;
+  background-color: #172337;
+  color: #fff;
+}
+h6{
+  color: #555;
+}
+.address_area{
+  /* justify-content: space-evenly; */
+  /* border: 5px solid red; */
+  width: 25vw;
+  height: 250px;
+  margin: 1% 1%;
+  margin-top: 3%;
+  display: flex;
+}
+.footer_inner{
+  display: flex;
+  /* width: 90vw; */
+  justify-content: space-around;
+}
+.first_4{
+  /* border: 3px solid palegreen; */
+  height: 300px;
+  width: 45vw;
+  display: flex;
+  font-size: 14px;
+  font-weight: 500;
+}
+.Second_2{
+  /* border: 3px solid red; */
+  height: auto;
+  width: 45vw;
+  display: flex;
+  font-size: 14px;
+  font-weight: 500;
+}
+.border_left{
+  border-left: 0.1px solid white;
+  height: 190px;
+  width: 100px;
+}
+mark{
+  background-color: #172337;
+  color:blue;
+  font-size: 14px;
+  font-weight: 700;
+}
+.modal-headerr{
+  /* background-color: none; */
+  width: 5vw;
+  height: 5vw;
+  /* border: 4px solid green; */
+  margin-top: 1%;
+}
+/* .modal-bodyy{
+  width: 44vw;
+  border: 4px solid orange;
+  margin: 0;padding: 0;
+} */
+/* .modal-content{
+  border: 5px solid red;
+  width: 30vw;
+  height: 100%;
+  display: flex !important;
+  background-color: null;
+} */
+.for_fles{
+  display: flex;
+}
+
+
+.yes{
+  height: 100px;
+  width: 80vw;
+  border: 4px solid yellow;
+  display: flex;
+}
+.botn_clos{
+  
+  color:red !important;
+}
+
+.modal-headerr {
+  /* background-color: white; */
+  color: white;
+  font-size: 22px;
+}
+.btn-close{
+  font-weight: 700;
+  /* color: #fff; */
+  color: #fff; 
+  opacity: 1;
+}
